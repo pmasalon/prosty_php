@@ -1,0 +1,59 @@
+formularz.html
+Kto ma dostęp
+
+Właściwości systemowe
+Typ elementu
+HTML
+Rozmiar
+1 KB
+Zajęte miejsce
+1 KB
+Lokalizacja
+2
+Właściciel
+ja
+Zmodyfikowano
+29 paź 2019 przeze mnie
+Otwarty
+20:02 przeze mnie
+Utworzono
+6 wrz 2020 w aplikacji Google Drive Web
+Dodaj opis
+Przeglądający mogą pobierać
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Wysyłanie danych na serwer WWW poprzez formularz</title>  
+  <style>
+      body{background-color: cadetblue;}
+	div{
+		border: 2px solid #bb1144;
+		width: 300px;
+		height: 350px;
+		background-color: #ffaa33;
+	}
+	legend{
+		font-size: 20px;
+		color: #aa00ff;
+	}
+  </style>
+</head>
+<body>
+  <div>
+   <form action="wyniki.php" method="post">
+   <legend>Podaj stopnie w Celsjuszach:</legend><br/>
+      <input type="text" name="cel"/><br/>
+	 <input type="radio" value="fah" name="stopnie"/> Fahrenheit<br/>
+	  <input type="radio" value="kel" name="stopnie"/>Kelvin<br/>
+	  <input type="radio" value="ran" name="stopnie"/>Rankine<br/>
+	  <input type="radio" value="del" name="stopnie"/>Delisle<br/>
+	  <input type="radio" value="newt" name="stopnie"/>Newton<br/>
+	  <input type="radio" value="rea" name="stopnie"/>Reaumur<br/>
+	  <input type="radio" value="rom" name="stopnie"/>Romer<br/><br/>
+      <input  type="submit" name="wyslij" value="Wyślij" />
+    </form>
+  </div>
+</body>
+</html>
